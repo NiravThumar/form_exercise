@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        .col-height {
+            height: 100vh;
+    
+        }
+    </style>
+    <script src="Bootsrap_form.js" defer></script>
+    <!-- <script src="formsubmit.js" defer></script> -->
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- exercise 1 -->
+        <div class="row">
+            
+            <div class="col-12 d-flex align-items-center justify-content-center col-height">
+                <form class="w-40 border p-4 rounded" id="myForm" enctype="multipart/form-data" >
+                <!-- <form class="w-40 border p-4 rounded" id="myForm" enctype="multipart/form-data" method="get"> -->
+                    <div id="success" class="bg-success text-white p-2 mb-4 rounded text-center" >Form submitted succesfully</div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                        <div id="emailHelp" class="form-text d-none ms-0 text-danger">* Email address is required</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="exampleInputPassword1" autocomplete="true">
+                        <div id="passwdHelp" class="form-text ms-0 d-none text-danger">* Password is required</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputfile" class="form-label">Profile
+                        <input type="file" class="form-control" name="file" id="exampleInputfile"></label>
+                        <div id="profileHelp" class="form-text ms-0 d-none text-danger">kindly add profile</div>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input checked"  name ="terms" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Accept terms and conditions</label>
+                        <div id="checkHelp" class="form-text ms-0 d-none text-danger">kindly accept terms and conditions</div>
+                    </div>
+                    <input type="submit" id="submit" class="btn btn-primary" value="sumbit">
+                </form>
+            </div>
+
+            
+        </div>
+    </div>
+
+
+       
+        
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
